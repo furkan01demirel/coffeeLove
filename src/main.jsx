@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter } from "react-router-dom";
 import "./styles/thema.css";
-import "./styles/app.css";
+import "./styles/App.css";
 // react router 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
