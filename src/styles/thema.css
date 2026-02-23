@@ -1,0 +1,13 @@
+:root{
+  --c-cream: #f2eeed;
+  --c-caramel: #976f47;
+  --c-coffee: #7b5836;
+  --c-espresso: #422a14;
+  --c-mocha: #4b3828;
+
+  --bg: var(--c-cream);
+  --text: var(--c-espresso);
+  --card: #fff6ea;
+  --border: rgba(66, 42, 20, 0.18);
+} 
+/* renk paleti değişkenleri */
