@@ -13,7 +13,7 @@ function Header() {
             <NavLink to="/benefits" className={({ isActive }) => (isActive ? "nav__link nav__link--active" : "nav__link")}>
                 Faydaları
             </NavLink>
-            <NavLink to="/history" className={({ isActive }) => (isActive ? "nav__link nav__link--active" : "nav__link")}>Tarihçesi</NavLink>
+            <NavLink to="/history" className={({ isActive }) => (isActive ? "nav__link nav__link--active" : "nav__link")}>Tarihçe</NavLink>
         </nav>
     </div>
    </header>
