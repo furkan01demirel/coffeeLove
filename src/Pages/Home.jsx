@@ -1,12 +1,12 @@
 import CardLink from "../components/CardLink.jsx";
-
+import benefits from "../assets/benefits.avif";
 export default function Home() {
   return (
     <>
       <section className="benefitsHero">
         <img
           className="benefitsHero__img"
-          src="src/assets/benefits.avif"
+          src={benefits}
           alt="Kahve fincanı ve çekirdekler"
         />
         <div className="benefitsHero__overlay">

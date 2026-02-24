@@ -1,3 +1,4 @@
+import beantypes from "../assets/beantypes.avif";
 const BEANS = [
   {
     name: "Arabica",
@@ -43,7 +44,7 @@ export default function BeanTypes() {
       <section className="benefitsHero">
         <img
           className="benefitsHero__img"
-          src="src/assets/beantypes.avif"
+          src={beantypes}
           alt="Kahve fincanı ve çekirdekler"
         />
         <div className="benefitsHero__overlay">

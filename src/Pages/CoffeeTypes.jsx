@@ -1,3 +1,4 @@
+import coffeeTypes from "../assets/coffeeTypes.avif";
 const COFFE_TYPES = [
   {
     name: "Espresso",
@@ -77,7 +78,7 @@ export default function CoffeeTypes() {
       <section className="benefitsHero">
         <img
           className="benefitsHero__img"
-          src="src/assets/coffeeTypes.avif"
+          src={coffeeTypes}
           alt="Kahve fincanı ve çekirdekler"
         />
         <div className="benefitsHero__overlay">

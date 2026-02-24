@@ -1,3 +1,4 @@
+import benefits1 from "../assets/benefits1.avif";
 export default function Benefits() {
   return (
     <div>
@@ -11,7 +12,7 @@ export default function Benefits() {
       <div className="benefitsHero">
         <img
           className="benefitsHero__img"
-          src="src/assets/benefits1.avif"
+          src={benefits1}
           alt="Kahve fincanı ve çekirdekler"
         />
         <div className="benefitsHero__overlay">

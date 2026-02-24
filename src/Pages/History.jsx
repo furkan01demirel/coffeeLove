@@ -1,3 +1,4 @@
+import history from "../assets/history.avif";
 export default function History() {
   return (
     <div>
@@ -10,7 +11,7 @@ export default function History() {
 
       <div className="benefitsHero">
         <img
-          src="src/assets/history.avif"
+          src={history}
           alt="Kahve tarihçesi görseli"
           className="benefitsHero__img"
         />

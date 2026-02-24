@@ -1,4 +1,4 @@
-
+import equipment from "../assets/equipment.avif";
 export default function CoffeeEquipment() {
   return (
     <div>
@@ -12,7 +12,7 @@ export default function CoffeeEquipment() {
      
       <div className="equipmentHero">
         <img
-          src="src/assets/equipment.avif"
+          src={equipment}
           alt="Kahve ekipmanları"
           className="equipmentHero__img"
         />
