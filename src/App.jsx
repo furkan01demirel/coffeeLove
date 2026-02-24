@@ -7,6 +7,7 @@ import BeanTypes from "./Pages/BeanTypes.jsx";
 import Benefits from "./Pages/Benefits.jsx";
 import History from "./Pages/History.jsx";
 import Brewing from "./Pages/Brewing.jsx";
+import Equipment from "./Pages/CoffeeEquipment.jsx";
 
 function App() {
   return (
@@ -18,9 +19,10 @@ function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/coffee-types" element={<CoffeeTypes/>}/>
             <Route path="/bean-types" element={<BeanTypes/>}/>
-             <Route path="/benefits" element={<Benefits/>}/>
-              <Route path="/history" element={<History/>}/>
-               <Route path="/brewing" element={<Brewing/>}/>
+            <Route path="/benefits" element={<Benefits/>}/>
+            <Route path="/history" element={<History/>}/>
+            <Route path="/brewing" element={<Brewing/>}/>
+            <Route path="/equipment" element={<Equipment/>}/>
           </Routes>
         </div>
       </main>

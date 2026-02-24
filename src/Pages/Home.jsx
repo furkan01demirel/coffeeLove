@@ -3,12 +3,16 @@ import CardLink from "../components/CardLink.jsx";
 export default function Home() {
   return (
     <>
-      <section className="hero">
-        <h1>Kahve İçin - Kahve,İçin</h1>
-        <p>
-          buraya daha güzel bir sayfa açıklaması yazmak lazım
-          Aşağıdaki kartlardan kahve türlerine veya çekirdek türlerine gidebilirsin.
-        </p>
+      <section className="benefitsHero">
+        <img
+          className="benefitsHero__img"
+          src="src/assets/benefits.avif"
+          alt="Kahve fincanı ve çekirdekler"
+        />
+        <div className="benefitsHero__overlay">
+          <div className="benefitsHero__title">Kahve için / Kahve, için</div>
+          <div className="benefitsHero__sub">Keyifli anlar için bi cup kahve</div>
+        </div>
       </section>
 
       <section className="cards" aria-label="Kahve kartları">
@@ -22,9 +26,23 @@ export default function Home() {
         <CardLink
           to="/bean-types"
           pill="Çekirdek"
-          title="Kahve Çekirdek Türleri"
+          title="Çekirdek Türleri"
           desc="Arabica, Robusta ve temel farkları."
           icon="🫘"
+        />
+        <CardLink
+          to="/brewing"
+          pill="Demleme"
+          title="Demleme Türleri"
+          desc="Espresso Makinesi, V60, French Press..."
+          icon="🫖"
+        />
+         <CardLink
+          to="/equipment"
+          pill="Ekipman"
+          title="Ekipman Türleri"
+          desc="V60, French Press, değirmen ve temel ekipmanlar."
+          icon="⚙️"
         />
       </section>
     </>

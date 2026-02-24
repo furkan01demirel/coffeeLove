@@ -14,10 +14,10 @@ export default function Footer() {
         <div>
           <div style={{ fontWeight: 800, marginBottom: 6 }}>İletişim</div>
           <small>
-            Email: <a href="mailto:furkan@example.com">furkan@example.com</a>
+            Email: <a href="mailto:furkan@example.com">furkan.demirel.056@gmail.com</a>
           </small>
           <div>
-            <small>Yapılış tarihi: {date}</small>
+            <small>{date}</small>
           </div>
         </div>
 
@@ -26,7 +26,7 @@ export default function Footer() {
           <div className="social">
             <a
               className="iconbtn"
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/furkan-demirel-74140a199/"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
@@ -37,7 +37,7 @@ export default function Footer() {
 
             <a
               className="iconbtn"
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/furkan_rar23/"
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"
@@ -48,7 +48,7 @@ export default function Footer() {
 
             <a
               className="iconbtn"
-              href="https://github.com/"
+              href="https://github.com/furkan01demirel"
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
