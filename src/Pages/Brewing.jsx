@@ -1,3 +1,5 @@
+import brewing2 from "../assets/brewing2.avif";
+
 export default function Brewing() {
   return (
     <div>
@@ -9,7 +11,7 @@ export default function Brewing() {
       </div>
 
       <div className="brewHero">
-        <img className="brewHero__img" src="src/assets/brewing2.avif" alt="Kahve demleme yöntemi" />
+        <img className="brewHero__img" src={brewing2} alt="Kahve demleme yöntemi" />
         <div className="brewHero__overlay">
           <div className="brewHero__title">Demleme bir ritüel</div>
           <div className="brewHero__sub">Aroma, öğütüm, su ve zaman: hepsi önemli.</div>
