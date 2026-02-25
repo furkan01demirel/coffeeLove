@@ -8,12 +8,15 @@ import Benefits from "./Pages/Benefits.jsx";
 import History from "./Pages/History.jsx";
 import Brewing from "./Pages/Brewing.jsx";
 import Equipment from "./Pages/CoffeeEquipment.jsx";
+import Builder from "./Pages/Builder.jsx";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
    <div className="shell">
       <Header/>
       <main>
+        <ScrollToTop />
         <div className="container">
           <Routes>
             <Route path="/" element={<Home/>}/>
@@ -23,6 +26,7 @@ function App() {
             <Route path="/history" element={<History/>}/>
             <Route path="/brewing" element={<Brewing/>}/>
             <Route path="/equipment" element={<Equipment/>}/>
+            <Route path="/builder" element={<Builder/>}/>
           </Routes>
         </div>
       </main>

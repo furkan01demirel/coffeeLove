@@ -44,6 +44,13 @@ export default function Home() {
           desc="V60, French Press, değirmen ve temel ekipmanlar."
           icon="⚙️"
         />
+        <CardLink
+          to="/builder"
+          pill="Resim"
+          title="Resim Oluşturucu"
+          desc="Yapay zeka kullanarak kendi resimlerini oluştur."
+          icon="🪄"
+        />
       </section>
     </>
   );

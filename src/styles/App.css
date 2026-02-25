@@ -753,3 +753,137 @@ main{
     padding: 7px 10px;
   }
 }
+
+.builder-page {
+  min-height: 100vh;
+  background:radial-gradient(800px 400px at 50% 100%, rgba(151,111,71,.12), transparent 70%);
+  padding: 30px;
+}
+
+.builder-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.builder-title {
+  color: #2b1b10;
+  margin-bottom: 20px;
+}
+
+.builder-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 16px;
+}
+
+.builder-card {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.builder-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill {
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pill:hover {
+  transform: translateY(-2px);
+}
+
+.pill.active {
+  background: #c6803a;
+  color: white;
+  border-color: #c6803a;
+}
+
+.actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: #8a4b18;
+  color: white;
+}
+
+.selection-box {
+  margin-top: 16px;
+  background: #faf6f1;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.preview-card {
+  text-align: center;
+}
+
+.preview-img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 14px;
+  margin-top: 12px;
+}
+.preview-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.download {
+  display: inline-block;
+  background: #8a4b18;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.placeholder {
+  margin-top: 40px;
+  color: #666;
+}
+
+.error {
+  color: crimson;
+  margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+  .builder-grid {
+    grid-template-columns: 1fr;
+  }
+}
