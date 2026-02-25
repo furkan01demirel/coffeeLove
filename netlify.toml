@@ -2,9 +2,9 @@
   command = "npm run build"
   publish = "dist"
 
-# Netlify -> Render proxy
+# Netlify -> Railway proxy
 [[redirects]]
   from = "/api/*"
-  to = "https://YOUR-RENDER-URL.onrender.com/api/:splat"
+  to = "https://SENIN-RAILWAY-DOMAININ/api/:splat"
   status = 200
   force = true
