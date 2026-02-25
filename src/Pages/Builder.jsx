@@ -15,6 +15,7 @@ export default function Builder() {
     beanType: "",
     machineType: "",
     brewType: "",
+    userPrompt:"",
   });
 
   const [loading, setLoading] = useState(false);
@@ -75,7 +76,6 @@ export default function Builder() {
         <h2 className="builder-title">☕ Resim Oluşturucu</h2>
 
         <div className="builder-grid">
-
         
           <div className="builder-card">
             <div className="builder-header">
@@ -134,6 +134,17 @@ export default function Builder() {
             </div>
 
             {err && <p className="error">{err}</p>}
+            
+            <div className="prompt-box">
+              <label className="prompt-label">Resim oluşturucu için yorumuzunu ekleyebilirsiniz (opsiyonel)</label>
+              <input
+              className="prompt-input"
+              placeholder="Örn: hafif ışıklı, mavi temalı, minimal..."
+              value={form.userPrompt}
+              onChange={(e)=>setForm((p)=>({...p,userPrompt:e.target.value}))}
+              maxLength={140}/>
+            </div>
+            <div className="prompt-hint">{form.userPrompt.length}/140</div>
           </div>
 
         

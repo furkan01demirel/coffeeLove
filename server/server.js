@@ -26,18 +26,32 @@ app.get("/health", (req, res) => res.json({ ok: true }));
 
 app.post("/api/generate-icon", async (req, res) => {
   try {
-    const { coffeeType, beanType, machineType, brewType } = req.body || {};
+    const { coffeeType, beanType, machineType, brewType, userPrompt } =
+      req.body || {};
     if (!coffeeType || !beanType || !machineType || !brewType) {
       return res.status(400).json({ error: "Eksik seçim var." });
     }
+    const extra = (userPrompt || "").trim();
+    const basePrompt = `
+      Cinematic coffee photography, cozy coffee shop style.
+      Coffee type: ${coffeeType}.
+      Bean type: ${beanType}.
+      Machine: ${machineType}.
+      Brewing method: ${brewType}.
+      realistic, high quality, detailed.
+      No text, no watermark.
+      `.trim();
 
-    const prompt = `Cinematic coffee photography, cozy coffee shop style.
-   Coffee type: ${coffeeType}.
-   Bean type: ${beanType}.
-   Machine: ${machineType}.
-   Brewing method: ${brewType}.
-   Warm lighting, realistic, high quality, detailed,
-   aesthetic coffee scene, no text, no watermark.`;
+    const _userPrompt = `
+      ${extra} style.
+      Coffee type: ${coffeeType}.
+      Bean type: ${beanType}.
+      Machine: ${machineType}.
+      Brewing method: ${brewType}.
+      realistic, high quality, detailed.
+      No text, no watermark.
+      `.trim();
+    const prompt = extra ? _userPrompt : basePrompt;
 
     const pngBuffer = await generateWithHuggingFace(prompt);
 

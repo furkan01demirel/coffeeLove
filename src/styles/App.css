@@ -887,3 +887,39 @@ main{
     grid-template-columns: 1fr;
   }
 }
+
+.prompt-box {
+  margin-top: 14px;
+  background: #faf6f1;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.prompt-label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #2b1b10;
+}
+
+.prompt-input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.2s;
+}
+
+.prompt-input:focus {
+  border-color: #c6803a;
+  box-shadow: 0 0 0 4px rgba(198, 128, 58, 0.18);
+}
+
+.prompt-hint {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #6a5446;
+  text-align: right;
+}
