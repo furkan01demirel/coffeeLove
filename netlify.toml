@@ -5,6 +5,6 @@
 # Netlify -> Railway proxy
 [[redirects]]
   from = "/api/*"
-  to = "https://SENIN-RAILWAY-DOMAININ/api/:splat"
+  to = "https://coffeelove-production.up.railway.app/api/:splat"
   status = 200
   force = true
