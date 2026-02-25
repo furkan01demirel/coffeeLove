@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://coffee-experience.netlify.app/sitemap.xml
