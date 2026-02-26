@@ -17,7 +17,15 @@ export default function Builder() {
     brewType: "",
     userPrompt:"",
   });
-
+  function clearSelect(){
+    setForm({
+    coffeeType: "",
+    beanType: "",
+    machineType: "",
+    brewType: "",
+    userPrompt: "",
+  });
+  }
   const [loading, setLoading] = useState(false);
   const [imageUrl, setImageUrl] = useState("");
   const [err, setErr] = useState("");
@@ -144,9 +152,19 @@ export default function Builder() {
               onChange={(e)=>setForm((p)=>({...p,userPrompt:e.target.value}))}
               maxLength={140}/>
             </div>
+            <div className="prompt-actions">
+              <button
+                type="button"
+                className="clear-btn"
+                onClick={clearSelect}
+                disabled={!clearSelect}
+              >
+                Temizle
+              </button>
+            </div>
             <div className="prompt-hint">{form.userPrompt.length}/140</div>
           </div>
-
+              
         
           <div className="builder-card preview-card">
             <h4>Önizleme</h4>

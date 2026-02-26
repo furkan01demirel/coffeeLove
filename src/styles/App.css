@@ -923,3 +923,27 @@ main{
   color: #6a5446;
   text-align: right;
 }
+.prompt-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.clear-btn {
+  background: #f3f3f3;
+  border: 1px solid #ddd;
+  padding: 6px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.clear-btn:hover {
+  background: #ececec;
+}
+
+.clear-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
